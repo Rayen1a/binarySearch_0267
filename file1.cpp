@@ -32,6 +32,25 @@ void input()
     }
 }
 
+void bubbleSortArray()
+{
+    int pass = 1; // step 1
+    do
+    {
+        for (int j = 0; j <= nPanjang - 1 - pass; j++)
+        { // step 2
+            if (element[j] > element[j + 1])
+            { // step 3
+                int temp;
+                temp = element[j];
+                element[j] = element[j + 1];
+                element[j + 1] = temp;
+            }
+        }
+        pass = pass + 1; // step 4
+    } while (pass <= nPanjang - 1); // step 5
+}
+
 
 void binarySearch()
 {
