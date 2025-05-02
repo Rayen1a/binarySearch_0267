@@ -81,12 +81,12 @@ void binarySearch()
             return;                                             // step 5b
         }
         if (x < element[mid]) // step 6
-            high = mid - 1;
-        if (x > element[mid])
+            high = mid - 1; // step 6a
+        if (x > element[mid]) // step 7
         {
-            low = mid + 1;
+            low = mid + 1; // step 7a
         }
-    } while (low <= high);
+    } while (low <= high); // step 8
     if (low < high)
     {
         cout << x << "Tidak ditemukan" << endl; // step 9
